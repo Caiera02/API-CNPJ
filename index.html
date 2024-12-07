@@ -11,7 +11,9 @@
 <body>
     <div id="title">
         <label for="CNPj">CNPJ</label>
-        <input type="text" id="CNPJ" onchange="BuscarCNPJ()">
+        <input style="text-align: center;" type="text" id="CNPJ" oninput="aplicarMascaraCNPJ(this)"
+            onchange="BuscarCNPJ()">
+        <!-- <button onclick="BuscarCNPJ()" style="padding: 1%;"></button> -->
     </div>
     <form action="" class="box">
 
@@ -20,33 +22,68 @@
             id="name" readonly>
 
         <label for="founded" id="fundacao">Fundação</label>
-        <input style="width: 20%;  border: 1px solid #ccc;border-radius: 5px; padding: 5px;" type="text" id="founded"
-            readonly>
+        <input style="width: 20%;  border: 1px solid #ccc;border-radius: 5px; padding: 5px; margin-bottom: 4%;  "
+            type="text" id="founded" readonly>
+
         <div class="container">
-
-
-
-            <label for="membro1">Nome</label>
+            <label for="membro2">Nome:</label>
             <input type="text" id="name0" readonly>
 
-            <label for="cargo">Cargo</label>
-            <input type="text" id="cargo0">
+            <label for="cargo">Cargo:</label>
+            <input type="text" id="cargo0" readonly>
+        </div>
 
-            <label for="membro2">Nome</label>
+        <div class="container">
+            <label for="membro2">Nome:</label>
             <input type="text" id="name1" readonly>
 
-            <label for="cargo">Cargo</label>
+            <label for="cargo">Cargo:</label>
             <input type="text" id="cargo1" readonly>
+        </div>
 
-            <label for="membro2">Nome</label>
+        <div class="container">
+            <label for="membro2">Nome:</label>
             <input type="text" id="name2" readonly>
 
-            <label for="cargo">Cargo</label>
+            <label for="cargo">Cargo:</label>
             <input type="text" id="cargo2" readonly>
+        </div>
 
-            <textarea name="" id="address"> </textarea>
+        <p> Endereço </p>
+        <div class="endereco">
+            <div class="cem">
+                <label for="cargo">Endereço:</label>
+                <input type="text" id="address" readonly>
+            </div>
 
+            <label for="cargo">Cidade:</label>
+            <input type="text" id="city" readonly>
+            
+            <label for="cargo">Bairro:</label>
+            <input type="text" id="district" readonly>
+            
+            <label for="cargo">CEP:</label>
+            <input type="text" id="zip" readonly>
 
+            <label for="cargo">Pais:</label>
+            <input type="text" id="country" readonly>
+
+        </div>
+
+        <p> Contatos</p>
+        <div class="container-cont">
+            <ul>
+                <li><input type="text" id="phone"></li>
+                <!-- <li id="phone"></li> -->
+                <li><input type="text" id="email"></li>
+                <li><a href="http://"></a><input type="text" id="site"></li>
+            </ul>
+
+            <!-- <label for="membro2">Nome:</label>
+            <input type="text" id="name2" readonly>
+
+            <label for="cargo">Cargo:</label>
+            <input type="text" id="cargo2" readonly> -->
         </div>
 
     </form>

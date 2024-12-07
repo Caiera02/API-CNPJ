@@ -1,54 +1,66 @@
 #title {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 2%;
-    margin-bottom: 2%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 2%;
+  margin-bottom: 2%;
 }
 
 .box {
-    border: 2px solid #000; /* Cria a borda */
-    /*padding-top: 3%; /* Espaçamento interno */
-    padding-left: 2%;
-    padding-bottom: 20%; 
-    border-radius: 10px; /* Arredonda os cantos */
-    width: 100vh; /* Largura da caixa */
-    height: 200px;
-    margin: 0 auto; /* Centraliza horizontalmente */
-    font-family: Arial, sans-serif; /* Fonte padrão */
+  border: 2px solid #000;
+  border-radius: 10px; /* Arredonda os cantos */
+  /*padding-top: 3%; /* Espaçamento interno */
+  padding-left: 2%;
+  padding-bottom: 20%;
+  width: 100vh; /* Largura da caixa */
+  height: 200px;
+  margin: 0 auto; /* Centraliza horizontalmente */
+  font-family: Arial, sans-serif;
 }
 
 .container {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    gap: 10px; /* Espaçamento entre os elementos */
-    /*border: 2px solid #ccc; /* Borda do quadrado */
-    padding: 20px; /* Espaçamento interno */
-    /*max-width: 500px; /* Largura máxima */
-    margin: auto; /* Centralizar na página */
-  }
-
-.container label {
-    /* align-self: center; */
-    margin-left: 5%;
-    margin-bottom: 10%;
-    align-self: center; /* Centralizar verticalmente o texto do rótulo */
-  }
-
- .container input {
-    padding: 8px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-  }
+  display: grid;
+  grid-template-columns: 0fr 1fr 0fr 1fr;
+  margin-top:0 auto;
+  margin-bottom: 1%;
+}
 
 .container input {
-   width: 100%; /* Campo ocupa a largura total */
-   margin-bottom: 15px; /* Espaço entre os campos */
-   padding: 5px; /* Espaçamento interno dos campos */
-   border: 1px solid #ccc; /* Borda dos campos */
-   border-radius: 5px; /* Arredonda os cantos dos campos */
-} 
+  width: 80%;/* Campo ocupa a largura total */
+  margin-bottom: 15px;/* Espaço entre os campos */
+  /*padding: 5px; /* Espaçamento interno dos campos */
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  text-transform: uppercase;
+  margin-left: 5px;
+}
 
 input[readonly] {
-    background-color: #e9ecef; /* Fundo diferente para campos somente leitura */
-  }
+  background-color: #e9ecef; /* Fundo diferente para campos somente leitura */
+}
+
+p{
+  text-align: center;
+}
+
+.endereco input  {
+  border: 1px solid #ccc; /* Borda dos campos */
+  border-radius: 5px;
+  margin-top: 1%;
+  margin-bottom: 2%;
+  text-align: center;
+}
+
+.cem input{
+  width: 90%;
+}
+.container-cont {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+li input{
+  border: white;
+  background-color: white;
+}
+
