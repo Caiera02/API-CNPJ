@@ -13,7 +13,7 @@
   padding-left: 2%;
   padding-bottom: 20%;
   width: 100vh; /* Largura da caixa */
-  height: 200px;
+  height: 300px;
   margin: 0 auto; /* Centraliza horizontalmente */
   font-family: Arial, sans-serif;
 }
@@ -43,18 +43,27 @@ p{
   text-align: center;
 }
 
+/* BlOCO DE ENDEREÇO */
+.endereco  {
+  margin-top: 2%;
+  margin-bottom: 2%;
+  text-align: center;
+}
+
 .endereco input  {
   border: 1px solid #ccc; /* Borda dos campos */
   border-radius: 5px;
   margin-top: 1%;
   margin-bottom: 2%;
-  text-align: center;
+   text-align: center;
 }
 
-.cem input{
-  width: 90%;
+.endereco1 input{
+  width: 80%;
+  margin-right: 5%;
+  text-transform: uppercase;
 }
-.container-cont {
+.container-cont{
   display: grid;
   grid-template-columns: 1fr;
 }
